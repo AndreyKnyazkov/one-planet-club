@@ -1,0 +1,86 @@
+.hero
+  background: url('../img/hero/hero.jpg') no-repeat
+  background-size: cover
+  &-block
+    text-align: center
+    padding: 150px 0 150px
+    &__title
+      line-height: initial
+      letter-spacing: 0.45px
+      +Header
+      font-size: 45px
+      color: #e8e7ef
+      display: inline-block
+      max-width: 910px
+      margin: auto
+    &__subtitle
+      padding-top: 23px
+      letter-spacing: 1.3px
+      font-size: 26px
+      color: #e8e7ef
+      position: relative
+      +Book
+      &::after
+        position: absolute
+        content: url(../img/hero/arrow.png)
+        transform: translate(34px, 36px)
+    &__btn
+      padding-top: 31px
+      margin: auto
+      text-align: center       
+      &-blue
+        box-shadow: 0 3px #01716c
+        display: flex
+        margin: auto        
+        text-align: initial
+        justify-content: space-around
+        max-width: 389px
+        font-size: 24px
+        line-height: 22px
+        letter-spacing: 0.72px
+        +Book
+        padding: 25px
+        border-radius: 5px
+        background-image: linear-gradient(to bottom, #0fb0a9 0%, #02918c 100%)
+      &-text
+        color: #e8e7ef
+        max-width: 260px
+@media ( max-width: 768px )
+  .hero
+    &-block
+      padding: 92px 0 90px
+      &__title
+        font-size: 30px
+      &__subtitle
+        font-size: 20px
+        &::after
+          transform: translate(40px, 4px)
+      &__btn
+        &-blue
+          max-width: 350px
+          font-size: 21px
+          padding: 19px 26px 19px 32px
+          img
+            transform: translateY(2px)
+        &-text
+          max-width: 230px
+@media ( max-width: 420px )
+  .hero
+    &-block
+      padding: 92px 0 90px
+      &__title
+        font-size: 22px
+      &__subtitle
+        font-size: 20px
+        &::after
+          content: ''
+          transform: translate(40px, 4px)
+      &__btn
+        &-blue
+          max-width: 350px
+          font-size: 21px
+          padding: 19px 26px 19px 32px
+          img
+            transform: translateY(2px)
+        &-text
+          max-width: 230px
