@@ -437,6 +437,18 @@ body {
   font-weight: 300;
 }
 
+.separator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 2px;
+  width: 76px;
+  background-color: #23b7b0;
+  margin: auto;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+}
+
 /*!
  * Bootstrap v4.5.0 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
