@@ -1,0 +1,96 @@
+@font-face {
+  font-family: 'Futura PT - Book';
+  src: url('../fonts/futura_pt_book.eot');
+  src: local('Futura PT - Book'), local('../fonts/futura_pt_book'),
+    url('../fonts/futura_pt_book?#iefix') format('embedded-opentype'),
+    url('../fonts/futura_pt_book.woff2') format('woff2'),
+    url('../fonts/futura_pt_book.woff') format('woff'),
+    url('../fonts/futura_pt_book.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Futura PT - Heavy';
+  src: url('../fonts/futura_pt_heavy.eot');
+  src: local('Futura PT - Heavy'), local('../fonts/futura_pt_heavy'),
+    url('../fonts/futura_pt_heavy.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/futura_pt_heavy.woff2') format('woff2'),
+    url('../fonts/futura_pt_heavy.woff') format('woff'),
+    url('../fonts/futura_pt_heavy.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Futura PT - Light';
+  src: url('../fonts/futura_pt_light.eot');
+  src: local('Futura PT - Light'), local('../fonts/futura_pt_light'),
+    url('../fonts/futura_pt_light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/futura_pt_light.woff2') format('woff2'),
+    url('../fonts/futura_pt_light.woff') format('woff'),
+    url('../fonts/futura_pt_light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Futura PT - Medium';
+  src: url('../fonts/futura_pt_medium.eot');
+  src: local('Futura PT Bold'), local('../fonts/futura_pt_medium'),
+    url('../fonts/futura_pt_medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/futura_pt_medium.woff2') format('woff2'),
+    url('../fonts/futura_pt_medium.woff') format('woff'),
+    url('../fonts/futura_pt_medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Futura PT - Demi';
+  src: url('../fonts/futura_pt_demi.eot');
+  src: local('Futura PT - Demi'), local('../fonts/futura_pt_demi'),
+    url('../fonts/futura_pt_demi.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/futura_pt_demi.woff2') format('woff2'),
+    url('../fonts/futura_pt_demi.woff') format('woff'),
+    url('../fonts/futura_pt_demi.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Trajan Pro 3';
+  src: url('../fonts/Trajan-Pro-3.eot');
+  src: local('Trajan Pro 3'), local('../fonts/Trajan-Pro-3'),
+    url('../fonts/Trajan-Pro-3.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Trajan-Pro-3.woff2') format('woff2'),
+    url('../fonts/Trajan-Pro-3.woff') format('woff'),
+    url('../fonts/Trajan-Pro-3.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@mixin Book {
+  font-family: 'Futura PT - Book', sans-serif;
+  font-weight: 400;
+}
+@mixin Heavy {
+  font-family: 'Futura PT - Heavy', sans-serif;
+  font-weight: 400;
+}
+@mixin Light {
+  font-family: 'Futura PT - Light', sans-serif;
+  font-weight: 300;
+}
+@mixin Medium {
+  font-family: 'Futura PT - Medium', sans-serif;
+  font-weight: 500;
+}
+@mixin Demi {
+  font-family: 'Futura PT - Demi', sans-serif;
+  font-weight: 400;
+}
+@mixin header {
+  font-family: 'Trajan Pro 3', sans-serif;
+  font-weight: 400;
+}
