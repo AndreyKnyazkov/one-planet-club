@@ -449,6 +449,33 @@ body {
           transform: translateY(10px);
 }
 
+.header {
+  line-height: initial;
+  letter-spacing: 0.45px;
+  font-family: 'Trajan Pro 3', sans-serif;
+  font-weight: 400;
+  font-size: 45px;
+  display: inline-block;
+  max-width: 910px;
+  margin: auto;
+}
+
+.header span {
+  color: #40c3bd;
+}
+
+@media (max-width: 768px) {
+  .header {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 420px) {
+  .header {
+    font-size: 22px;
+  }
+}
+
 /*!
  * Bootstrap v4.5.0 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
@@ -11523,6 +11550,10 @@ body.compensate-for-scrollbar {
   background-size: cover;
 }
 
+.hero-separator {
+  margin-top: 8px;
+}
+
 .hero-block {
   text-align: center;
   padding: 150px 0 150px;
@@ -11650,8 +11681,16 @@ body.compensate-for-scrollbar {
   }
 }
 
+.reward {
+  background: url("../img/reward/girl.jpg") no-repeat;
+  background-size: cover;
+  padding-top: 56px;
+  padding-bottom: 105px;
+}
+
 .reward-block__title {
   font-size: 35px;
+  letter-spacing: 0.88px;
   font-family: 'Trajan Pro 3', sans-serif;
   font-weight: 400;
   text-align: center;
@@ -11688,6 +11727,7 @@ body.compensate-for-scrollbar {
 
 .reward-block__list-lists {
   height: 323px;
+  margin-top: 86px;
 }
 
 .reward-block__list-lists-1 {
@@ -11723,5 +11763,29 @@ body.compensate-for-scrollbar {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-bottom: 10px solid #0fada8;
+}
+
+.reward-block__list-lists-4 {
+  background: url("../img/reward/people.png") no-repeat right bottom -10px, -webkit-gradient(linear, left top, left bottom, from(#0fb0a9), to(#02918c));
+  background: url("../img/reward/people.png") no-repeat right bottom -10px, linear-gradient(to bottom, #0fb0a9 0%, #02918c 100%);
+  background-size: 50%;
+  -webkit-box-shadow: 0 0 45px rgba(209, 209, 209, 0.45);
+          box-shadow: 0 0 45px rgba(209, 209, 209, 0.45);
+  border-radius: 5px;
+  padding: 20px 0px 0px 34px;
+  line-height: initial;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.monitor {
+  margin: auto;
+  text-align: center;
+}
+
+.monitor-img {
+  -webkit-transform: translateY(-18px);
+          transform: translateY(-18px);
+  margin-bottom: 60px;
 }
 /*# sourceMappingURL=style.css.map */
