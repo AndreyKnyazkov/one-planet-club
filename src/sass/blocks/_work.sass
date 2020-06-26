@@ -4,3 +4,35 @@
     margin: auto
     text-align: center
     max-width: 650px
+  &-separator
+    margin-bottom: 40px
+  &-btn
+    margin-top: 15px
+    border-radius: 5px
+    border: 1px solid #10b5b0
+    border-left: 7px solid #10b5b0
+    background-color: #10b5b0
+    padding: 14px 34px 14px 24px
+    font-size: 20px
+    width: 100%
+    text-align: left
+    +Demi
+    color: #ffffff
+    position: relative
+    &:after
+      content: ''
+      position: absolute
+      content: url(../img/work/btn-active.png)
+      right: 25px
+    &:focus
+      outline: none
+    &.collapsed
+      border: 1px solid #10b5b0
+      border-left: 7px solid #10b5b0
+      background-color: white
+      color:#848383
+      &:after
+        content: ''
+        position: absolute
+        content: url(../img/work/btn-nonactive.png)
+        right: 25px
