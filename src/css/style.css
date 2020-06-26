@@ -524,6 +524,7 @@ body {
 }
 
 .header-title {
+  padding: initial;
   line-height: initial;
   letter-spacing: 0.45px;
   font-family: 'Trajan Pro 3', sans-serif;
@@ -11797,6 +11798,11 @@ body.compensate-for-scrollbar {
           clip-path: polygon(0 0, 100% 0, 78% 100%, 0 100%);
 }
 
+.reward-12-separator {
+  margin: initial;
+  margin-top: 20px;
+}
+
 .reward-12-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12304,6 +12310,11 @@ body.compensate-for-scrollbar {
   color: #3e3e3e;
 }
 
+.road {
+  background: #f4f3f3;
+  z-index: -2;
+}
+
 .road-block {
   max-width: 350px;
   text-align: right;
@@ -12330,6 +12341,68 @@ body.compensate-for-scrollbar {
 }
 
 .road-btn__text {
+  font-family: 'Futura PT - Book', sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.6px;
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.free-block-img {
+  -webkit-transform: translate(326px, -561px);
+          transform: translate(326px, -561px);
+  position: absolute;
+  z-index: 5;
+}
+
+.free-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.free-headers {
+  margin-top: 79px;
+  max-width: 808px;
+  color: #3e3e3e;
+  font-family: 'Trajan Pro 3', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.75px;
+}
+
+.free-separator {
+  margin: initial;
+}
+
+.free-frank {
+  margin-top: 66px;
+  position: absolute;
+  right: -140px;
+  width: 474px;
+}
+
+.free-btn {
+  margin-top: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 304px;
+  padding: 28px 40px 28px 37px;
+  -webkit-box-shadow: 0 3px #01716c;
+          box-shadow: 0 3px #01716c;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#0fb0a9), to(#02918c));
+  background-image: linear-gradient(to bottom, #0fb0a9 0%, #02918c 100%);
+  border-radius: 5px;
+}
+
+.free-btn__text {
   font-family: 'Futura PT - Book', sans-serif;
   font-weight: 400;
   line-height: 24px;

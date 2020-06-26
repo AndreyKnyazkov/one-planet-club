@@ -1,9 +1,24 @@
-.road
-  background: #f4f3f3
-  z-index: -2
+.free
   &-block
-    max-width: 350px
-    text-align: right
+    &-img
+      transform: translate(326px, -561px)
+      position: absolute
+      z-index: 5
+  &-header
+    display: flex
+    &s
+      margin-top: 79px
+      max-width: 808px
+      color: #3e3e3e
+      +Header
+      letter-spacing: 0.75px
+  &-separator
+    margin: initial
+  &-frank
+    margin-top: 66px
+    position: absolute
+    right: -140px
+    width: 474px
   &-btn
     margin-top: 44px
     display: flex
@@ -14,7 +29,6 @@
     box-shadow: 0 3px #01716c
     background-image: linear-gradient(to bottom, #0fb0a9 0%, #02918c 100%)
     border-radius: 5px
-    &__img
     &__text
       +Book
       line-height: 24px
