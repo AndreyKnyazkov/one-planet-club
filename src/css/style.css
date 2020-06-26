@@ -12193,6 +12193,15 @@ body.compensate-for-scrollbar {
   margin-top: 90px;
 }
 
+.work-card {
+  width: 90%;
+  margin: auto;
+  font-family: 'Futura PT - Light', sans-serif;
+  font-weight: 300;
+  color: #3e3e3e;
+  font-size: 22px;
+}
+
 .work-header {
   margin: auto;
   text-align: center;
@@ -12242,5 +12251,26 @@ body.compensate-for-scrollbar {
   position: absolute;
   content: url(../img/work/btn-nonactive.png);
   right: 25px;
+}
+
+.future {
+  padding-top: 122px;
+}
+
+.future-header {
+  text-align: center;
+}
+
+.future-video {
+  margin-top: 50px;
+}
+
+.future-video__dspr {
+  font-family: 'Futura PT - Light', sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+  padding-bottom: 30px;
+  letter-spacing: 0.63px;
+  color: #3e3e3e;
 }
 /*# sourceMappingURL=style.css.map */
