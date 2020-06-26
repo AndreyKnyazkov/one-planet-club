@@ -25,6 +25,9 @@
   clip-path: polygon(0 0, 86% 0, 100% 100%, 0 100%);
   transform-origin: left bottom;
 }
+#more {
+  display: none;
+}
 
 .header__bg_road {
   position: absolute;

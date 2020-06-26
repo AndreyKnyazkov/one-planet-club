@@ -1,43 +1,15 @@
-var accItem = document.getElementsByClassName('questions-answer');
-var accHD = document.getElementsByClassName('questions-answer__title');
-var popupName = ('.popup-answer');
-var link = ('.button');
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
 
-for (i = 0; i < accHD.length; i++) {
-    accHD[i].addEventListener('click', toggleItem, false);
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Читать полностью";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Свернуть";
+    moreText.style.display = "inline";
+  }
 }
-function toggleItem() {
-    var itemClass = this.parentNode.className;
-    for (i = 0; i < accItem.length; i++) {
-        accItem[i].className = 'questions-answer close';
-    }
-    if (itemClass == 'questions-answer close') {
-        this.parentNode.className = 'questions-answer open';
-    }
-}
-/* modal popup */
-$(document).ready(function($) {
-  $('.button').on('click', function() {
-    $('.modal-answer').text($(this).attr('data-popup'));
-    $('.modal').css("display", "flex").hide().fadeIn();
-    return false;
-  });	
-	
-  $('.modal-close').click(function() {
-    $(this).parents('.modal').fadeOut();
-    return false;
-  });		
- 
-  $(document).keydown(function(e) {
-    if (e.keyCode === 27) {
-      e.stopPropagation();
-      $('.modal').fadeOut();
-    }
-  });
-	
-  $('.modal').click(function(e) {
-    if ($(e.target).closest('.modal-block').length == 0) {
-      $(this).fadeOut();					
-    }
-  });
-});

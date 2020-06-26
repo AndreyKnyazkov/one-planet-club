@@ -76,6 +76,10 @@
           transform-origin: left bottom;
 }
 
+#more {
+  display: none;
+}
+
 .header__bg_road {
   position: absolute;
   z-index: -1;
@@ -12143,6 +12147,21 @@ body.compensate-for-scrollbar {
   padding-bottom: 130px;
 }
 
+.author-btn {
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+  border-radius: 5px;
+  border: 1px solid #10b5b0;
+  font-size: 18px !important;
+  font-family: 'Futura PT - Light', sans-serif;
+  font-weight: 300;
+  color: #14b4af !important;
+  letter-spacing: 0.45px;
+  padding: 16px 25px;
+  background: transparent;
+  cursor: pointer;
+}
+
 .author-img {
   margin: auto;
   text-align: center;
@@ -12172,6 +12191,7 @@ body.compensate-for-scrollbar {
 
 .author-block__dspr {
   margin-top: 20px;
+  margin-bottom: 20px;
   font-family: 'Futura PT - Book', sans-serif;
   font-weight: 400;
   font-size: 23px;
