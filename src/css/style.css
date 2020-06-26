@@ -11807,7 +11807,7 @@ body.compensate-for-scrollbar {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 26px 34px 21px 41px;
+  padding: 26px 34px 26px 41px;
   width: 305px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#0fb0a9), to(#02918c));
   background-image: linear-gradient(to bottom, #0fb0a9 0%, #02918c 100%);
@@ -11818,6 +11818,8 @@ body.compensate-for-scrollbar {
 }
 
 .reward-12-button__text {
+  letter-spacing: 0.6px;
+  line-height: 22px;
   font-family: 'Futura PT - Book', sans-serif;
   font-weight: 400;
   font-size: 24px;
@@ -11996,5 +11998,112 @@ body.compensate-for-scrollbar {
     width: 80%;
     margin: auto;
   }
+}
+
+.calc {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.calc-header {
+  text-align: center;
+}
+
+.binar {
+  background: url("../img/space.jpg") no-repeat;
+  background-size: cover;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.binar-header {
+  font-size: 20px;
+  color: #fff;
+  letter-spacing: 0.5px;
+  font-family: 'Futura PT - Medium', sans-serif;
+  font-weight: 500;
+  text-align: center;
+}
+
+.binar-btn {
+  line-height: 16.32px;
+  letter-spacing: 0.61px;
+  color: #ffffff !important;
+  margin: auto;
+  display: inline-block;
+  margin-top: 31px;
+  padding: 25px;
+  font-family: 'Futura PT - Book', sans-serif;
+  font-weight: 400;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#22b2a9), to(#16928c));
+  background-image: linear-gradient(to bottom, #22b2a9 0%, #16928c 100%);
+  -webkit-box-shadow: 0 3px #01716c;
+          box-shadow: 0 3px #01716c;
+  font-size: 24px;
+  border-radius: 5px;
+}
+
+.product {
+  padding-top: 88px;
+  padding-bottom: 220px;
+  background: url("../img/man.png") right bottom no-repeat;
+}
+
+.product-separator {
+  position: absolute;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+}
+
+.product-header {
+  text-align: center;
+  margin: auto;
+  max-width: 705px;
+}
+
+.product-block {
+  background: #fff;
+  max-width: 1050px;
+  margin: auto;
+  margin-top: 150px;
+  padding-top: 55px;
+  padding-bottom: 80px;
+  border: 1px solid #10b5b0;
+  border-radius: 6px;
+  outline-radius: 6px;
+  -webkit-box-shadow: 0 12px #10b5b0;
+          box-shadow: 0 12px #10b5b0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.product-block__img {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  position: relative;
+}
+
+.product-block__img img {
+  position: absolute;
+  min-width: 529px;
+  -webkit-transform: translate(-78px, -159px);
+          transform: translate(-78px, -159px);
+}
+
+.product-block__text {
+  -ms-flex-preferred-size: 54%;
+      flex-basis: 54%;
+  z-index: 5;
+  line-height: 35px;
+  font-size: 28px;
+  letter-spacing: 0.7px;
+  font-family: 'Futura PT - Light', sans-serif;
+  font-weight: 300;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,40 @@
+.product
+  padding-top: 88px
+  padding-bottom: 220px
+  background: url('../img/man.png') right bottom no-repeat
+  &-separator
+    position: absolute
+    transform: translateY(20px)
+  &-header
+    text-align: center
+    margin: auto
+    max-width: 705px
+  &-block
+    background: #fff
+    max-width: 1050px
+    margin: auto
+    margin-top: 150px
+    padding-top: 55px
+    padding-bottom: 80px
+    border: 1px solid #10b5b0
+    border-radius: 6px
+    outline-radius: 6px
+    box-shadow: 0 12px #10b5b0
+    display: flex
+    position: relative
+    justify-content: space-between
+    &__img
+      flex-basis: 40%
+      position: relative
+      img
+        position: absolute
+        min-width: 529px
+        transform: translate(-78px, -159px)
+    &__text
+      flex-basis: 54%      
+      z-index: 5
+      line-height: 35px
+      font-size: 28px
+      letter-spacing: 0.7px
+      +Light
+      
