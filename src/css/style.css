@@ -55,9 +55,27 @@
 
 .road {
   position: relative;
+  z-index: 0;
   overflow: hidden;
   padding-top: 163px;
   padding-bottom: 122px;
+}
+
+.header__bg_road {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  right: 0%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/reward/space.jpg");
+  -webkit-clip-path: polygon(100% 0, 50% 0, 42% 100%, 74% 100%, 100% 100%);
+          clip-path: polygon(100% 0, 50% 0, 42% 100%, 74% 100%, 100% 100%);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  background-size: cover;
 }
 
 .header__bg {
@@ -115,23 +133,22 @@
     transform-origin: initial;
     background-size: cover;
   }
-}
-
-.header__bg_road {
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  bottom: 0;
-  right: 0%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url("../img/reward/space.jpg");
-  -webkit-clip-path: polygon(100% 0, 50% 0, 42% 100%, 74% 100%, 100% 100%);
-          clip-path: polygon(100% 0, 50% 0, 42% 100%, 74% 100%, 100% 100%);
-  -webkit-transform-origin: right;
-          transform-origin: right;
-  background-size: cover;
+  .header__bg_road {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/reward/space.jpg) no-repeat;
+    -webkit-clip-path: initial;
+    clip-path: initial;
+    -webkit-transform-origin: initial;
+    transform-origin: initial;
+    background-size: cover;
+  }
 }
 
 h1 {
@@ -525,11 +542,16 @@ img {
 }
 
 a {
+  cursor: pointer;
   text-decoration: none;
 }
 
 a:visited {
   color: #fff;
+}
+
+a:hover {
+  text-decoration: initial !important;
 }
 
 body {
@@ -12632,12 +12654,34 @@ body.compensate-for-scrollbar {
   color: #3e3e3e;
 }
 
+@media (max-width: 992px) {
+  .future-video__dspr {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .future {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+  .future-video {
+    margin-top: 20px;
+  }
+  .future-video__dspr {
+    font-size: 14px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+}
+
 .road {
   background: #f4f3f3;
-  z-index: -2;
+  z-index: 0;
 }
 
 .road-block {
+  display: block;
   max-width: 350px;
   text-align: right;
 }
@@ -12671,7 +12715,38 @@ body.compensate-for-scrollbar {
   font-size: 24px;
 }
 
-.free-block-img {
+@media (max-width: 992px) {
+  .road {
+    padding-top: 62px;
+    padding-bottom: 75px;
+  }
+}
+
+@media (max-width: 768px) {
+  .road-btn {
+    padding: 21px 25px 16px 30px;
+    width: 227px;
+  }
+  .road-btn__text {
+    font-size: 18px;
+  }
+  .road-btn__img {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+@media (max-width: 576px) {
+  .road-block {
+    text-align: center;
+    margin: auto;
+  }
+  .road-btn {
+    width: 100%;
+  }
+}
+
+.free-block-img img {
   -webkit-transform: translate(326px, -561px);
           transform: translate(326px, -561px);
   position: absolute;
@@ -12731,5 +12806,48 @@ body.compensate-for-scrollbar {
   letter-spacing: 0.6px;
   color: #ffffff;
   font-size: 24px;
+}
+
+@media (max-width: 1720px) {
+  .free-block-img img {
+    -webkit-transform: translate(164px, -561px);
+            transform: translate(164px, -561px);
+  }
+}
+
+@media (max-width: 1420px) {
+  .free-block-img img {
+    -webkit-transform: translate(0px, -561px);
+            transform: translate(0px, -561px);
+  }
+}
+
+@media (max-width: 1200px) {
+  .free-block-img img {
+    -webkit-transform: translate(15px, -498px);
+            transform: translate(15px, -498px);
+    width: 55%;
+  }
+}
+
+@media (max-width: 992px) {
+  .free-block-img img {
+    -webkit-transform: translate(15px, -382px);
+            transform: translate(15px, -382px);
+  }
+}
+
+@media (max-width: 768px) {
+  .free-block-img img {
+    -webkit-transform: translate(15px, -308px);
+            transform: translate(15px, -308px);
+  }
+}
+
+@media (max-width: 576px) {
+  .free-img-img {
+    -webkit-transform: translateY(27px) !important;
+            transform: translateY(27px) !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */

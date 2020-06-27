@@ -1,7 +1,8 @@
 .road
   background: #f4f3f3
-  z-index: -2
+  z-index: 0
   &-block
+    display: block
     max-width: 350px
     text-align: right
   &-btn
@@ -21,3 +22,24 @@
       letter-spacing: 0.6px
       color: #ffffff
       font-size: 24px
+@media ( max-width: 992px )
+  .road
+    padding-top: 62px
+    padding-bottom: 75px
+@media ( max-width: 768px )
+  .road
+    &-btn
+      padding: 21px 25px 16px 30px
+      width: 227px
+      &__text
+        font-size: 18px       
+      &__img
+        width: 34px
+        height: 34px 
+@media ( max-width: 576px )
+  .road
+    &-block
+      text-align: center
+      margin: auto
+    &-btn
+      width: 100%

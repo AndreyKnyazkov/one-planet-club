@@ -1,6 +1,6 @@
 .free
   &-block
-    &-img
+    &-img img
       transform: translate(326px, -561px)
       position: absolute
       z-index: 5
@@ -35,3 +35,34 @@
       letter-spacing: 0.6px
       color: #ffffff
       font-size: 24px
+@media ( max-width: 1720px )
+  .free
+    &-block
+      &-img img
+        transform: translate(164px, -561px)
+@media ( max-width: 1420px )
+  .free
+    &-block
+      &-img img
+        transform: translate(0px, -561px)
+@media ( max-width: 1200px )
+  .free
+    &-block
+      &-img img
+        transform: translate(15px, -498px)
+        width: 55%
+@media ( max-width: 992px )
+  .free
+    &-block
+      &-img img
+        transform: translate(15px, -382px)
+@media ( max-width: 768px )
+  .free
+    &-block
+      &-img img
+        transform: translate(15px, -308px)
+@media ( max-width: 576px )
+  .free
+    &-img
+      &-img
+        transform: translateY(27px)!important
