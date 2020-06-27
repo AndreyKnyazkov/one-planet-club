@@ -12274,6 +12274,68 @@ body.compensate-for-scrollbar {
   font-weight: 300;
 }
 
+@media (max-width: 992px) {
+  .product-block__img img {
+    min-width: 415px;
+    -webkit-transform: translate(-87px, -70px);
+            transform: translate(-87px, -70px);
+  }
+}
+
+@media (max-width: 768px) {
+  .product {
+    padding-top: 44px;
+  }
+  .product-block {
+    padding-top: 50px;
+    padding-bottom: 59px;
+  }
+  .product-block__img img {
+    min-width: 342px;
+    -webkit-transform: translate(-117px, -101px);
+            transform: translate(-117px, -101px);
+  }
+  .product-block__text {
+    font-size: 14px;
+    line-height: 20.5px;
+  }
+}
+
+@media (max-width: 576px) {
+  .product {
+    padding-top: 26px;
+    padding-bottom: 0;
+    background: url(../img/man.png) right -151px bottom no-repeat;
+    background-size: contain;
+  }
+  .product-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 180px;
+    padding-bottom: 28px;
+  }
+  .product-block__img img {
+    max-width: 300px;
+    -webkit-transform: translate(-4px, -284px);
+            transform: translate(-4px, -284px);
+  }
+  .product-block__text {
+    padding-left: 21px;
+    padding-right: 21px;
+  }
+  .product-separator {
+    display: none;
+  }
+}
+
+@media (max-width: 374px) {
+  .product-block__img img {
+    min-width: initial;
+  }
+}
+
 .author {
   background: url("../img/author/space-author.jpg");
   padding-top: 160px;

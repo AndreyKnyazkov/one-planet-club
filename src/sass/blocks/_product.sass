@@ -37,4 +37,45 @@
       font-size: 28px
       letter-spacing: 0.7px
       +Light
-      
+@media ( max-width: 992px )
+  .product
+    &-block
+      &__img img
+        min-width: 415px
+        transform: translate(-87px, -70px)
+      &__text
+@media ( max-width: 768px )
+  .product
+    padding-top: 44px
+    &-block
+      padding-top: 50px
+      padding-bottom: 59px
+      &__img img
+        min-width: 342px
+        transform: translate(-117px, -101px)
+      &__text
+        font-size: 14px
+        line-height: 20.5px
+@media (max-width: 576px)
+  .product
+    padding-top: 26px
+    padding-bottom: 0
+    background: url(../img/man.png) right -151px bottom no-repeat
+    background-size: contain 
+    &-block
+      flex-direction: column
+      padding-top: 180px
+      padding-bottom: 28px
+      &__img img
+        max-width: 300px
+        transform: translate(-4px, -284px)
+      &__text
+        padding-left: 21px
+        padding-right: 21px
+    &-separator
+      display: none
+@media (max-width: 374px)
+  .product
+    &-block
+      &__img img
+        min-width: initial
