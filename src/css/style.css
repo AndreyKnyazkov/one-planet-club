@@ -12165,7 +12165,7 @@ body.compensate-for-scrollbar {
 }
 
 .binar-header {
-  font-size: 20px;
+  font-size: 32px;
   color: #fff;
   letter-spacing: 0.5px;
   font-family: 'Futura PT - Medium', sans-serif;
@@ -12189,6 +12189,26 @@ body.compensate-for-scrollbar {
           box-shadow: 0 3px #01716c;
   font-size: 24px;
   border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .binar-header h2 {
+    font-size: 20px;
+  }
+  .binar-btn {
+    font-size: 18px;
+    padding: 29px 27px 29px 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .binar {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+  .binar-header h2 {
+    font-size: 14px;
+  }
 }
 
 .product {

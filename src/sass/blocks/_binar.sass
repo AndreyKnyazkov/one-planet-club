@@ -5,7 +5,7 @@
   padding-bottom: 50px
   text-align: center    
   &-header
-    font-size: 20px
+    font-size: 32px
     color: #fff
     letter-spacing: 0.5px
     +Medium
@@ -23,3 +23,16 @@
   box-shadow: 0 3px #01716c
   font-size: 24px
   border-radius: 5px
+@media ( max-width: 768px )
+  .binar
+    &-header h2
+      font-size: 20px
+    &-btn
+      font-size: 18px
+      padding: 29px 27px 29px 24px
+@media ( max-width: 576px )
+  .binar
+    padding-top: 35px
+    padding-bottom: 35px
+    &-header h2
+      font-size: 14px
