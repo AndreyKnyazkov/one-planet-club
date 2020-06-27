@@ -12068,7 +12068,7 @@ body.compensate-for-scrollbar {
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 576px) {
   .monitor-img {
     width: 80%;
   }
@@ -12112,6 +12112,10 @@ body.compensate-for-scrollbar {
   .reward-12 {
     z-index: 1;
   }
+  .reward-12-media {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
   .reward-12-img {
     width: 100%;
     z-index: 2 !important;
@@ -12121,9 +12125,9 @@ body.compensate-for-scrollbar {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 310px !important;
     z-index: 6;
     width: 80%;
+    margin-top: 40px !important;
     margin: auto;
   }
   .reward-12-header {
@@ -12309,11 +12313,13 @@ body.compensate-for-scrollbar {
     background-size: contain;
   }
   .product-block {
+    -webkit-transform: translateY(17px);
+            transform: translateY(17px);
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-top: 180px;
+    padding-top: 166px;
     padding-bottom: 28px;
   }
   .product-block__img img {
@@ -12334,6 +12340,10 @@ body.compensate-for-scrollbar {
   .product-block__img img {
     min-width: initial;
   }
+}
+
+.dblock {
+  display: none;
 }
 
 .author {
@@ -12408,6 +12418,80 @@ body.compensate-for-scrollbar {
 
 .author-video {
   margin-top: 46px;
+}
+
+@media (max-width: 768px) {
+  .author {
+    padding-top: 50px;
+    padding-bottom: 75px;
+  }
+  .author-video {
+    margin-top: 15px;
+  }
+  .author-headers {
+    margin-top: 45px;
+    font-size: 14px;
+  }
+  .author-block__dspr {
+    max-width: initial;
+    font-size: 14px;
+    line-height: 20.5px;
+    letter-spacing: 0.6px;
+  }
+  .author-block__title {
+    font-size: 22px;
+  }
+  .author-block__name {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  .author-btn {
+    font-size: 14px !important;
+    line-height: 23.43px !important;
+    padding: 14px 8px 17px 11px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .dblock {
+    text-align: center;
+    -webkit-transform: translateY(-40px);
+            transform: translateY(-40px);
+    display: block;
+  }
+  .dnon {
+    display: none;
+  }
+  .author {
+    padding-top: 92px;
+  }
+  .author-headers {
+    margin-top: 35px;
+    font-size: 12px;
+  }
+  .author-block {
+    text-align: center;
+  }
+  .author-block__dspr {
+    margin: 0;
+  }
+  .author-block__title {
+    padding-top: 24px;
+  }
+  .author-separator {
+    margin: auto;
+  }
+  .author-separator__name {
+    font-size: 16px;
+    line-height: 17.42px;
+    letter-spacing: 0.92px;
+  }
+  .author-separator__title {
+    padding-top: 24px;
+    font-size: 16px;
+    line-height: 17.42px;
+    letter-spacing: 0.92px;
+  }
 }
 
 .online {

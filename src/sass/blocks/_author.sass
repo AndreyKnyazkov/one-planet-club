@@ -1,3 +1,5 @@
+.dblock
+  display: none
 .author
   background: url('../img/author/space-author.jpg')
   padding-top: 160px
@@ -49,3 +51,56 @@
     +Light
   &-video
     margin-top: 46px
+@media ( max-width: 768px )
+  .author
+    padding-top: 50px
+    padding-bottom: 75px
+    &-video
+      margin-top: 15px
+    &-headers
+      margin-top: 45px
+      font-size: 14px
+    &-block
+      &__dspr
+        max-width: initial
+        font-size: 14px
+        line-height: 20.5px
+        letter-spacing: 0.6px
+      &__title
+        font-size: 22px
+      &__name
+        font-size: 18px
+        margin-top: 20px
+    &-btn
+      font-size: 14px!important
+      line-height: 23.43px!important
+      padding: 14px 8px 17px 11px!important
+@media ( max-width: 576px )
+  .dblock
+    text-align: center
+    transform: translateY(-40px)
+    display: block
+  .dnon
+    display: none
+  .author
+    padding-top: 92px
+    &-headers
+      margin-top: 35px
+      font-size: 12px
+    &-block
+      text-align: center
+      &__dspr
+        margin: 0
+      &__title
+        padding-top: 24px
+    &-separator
+      margin: auto
+      &__name
+        font-size: 16px
+        line-height: 17.42px
+        letter-spacing: 0.92px
+      &__title
+        padding-top: 24px
+        font-size: 16px
+        line-height: 17.42px
+        letter-spacing: 0.92px
