@@ -12815,6 +12815,12 @@ body.compensate-for-scrollbar {
   }
 }
 
+@media (max-width: 1500px) {
+  .free-frank {
+    right: 0;
+  }
+}
+
 @media (max-width: 1420px) {
   .free-block-img img {
     -webkit-transform: translate(0px, -561px);
@@ -12823,6 +12829,12 @@ body.compensate-for-scrollbar {
 }
 
 @media (max-width: 1200px) {
+  .free-frank {
+    width: 340px;
+  }
+  .free-headers {
+    max-width: 658px;
+  }
   .free-block-img img {
     -webkit-transform: translate(15px, -498px);
             transform: translate(15px, -498px);
@@ -12831,6 +12843,10 @@ body.compensate-for-scrollbar {
 }
 
 @media (max-width: 992px) {
+  .free-headers {
+    font-size: 22px;
+    max-width: 470px;
+  }
   .free-block-img img {
     -webkit-transform: translate(15px, -382px);
             transform: translate(15px, -382px);
@@ -12838,6 +12854,30 @@ body.compensate-for-scrollbar {
 }
 
 @media (max-width: 768px) {
+  .free {
+    padding-bottom: 50px;
+    margin: auto;
+  }
+  .free-header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .free-header img {
+    position: initial;
+  }
+  .free-btn {
+    padding: 21px 30px 16px 33px;
+    width: 209px;
+  }
+  .free-btn__text {
+    font-size: 18px;
+  }
+  .free-btn__img {
+    width: 32px;
+    height: 32px;
+  }
   .free-block-img img {
     -webkit-transform: translate(15px, -308px);
             transform: translate(15px, -308px);
@@ -12845,6 +12885,35 @@ body.compensate-for-scrollbar {
 }
 
 @media (max-width: 576px) {
+  .free {
+    padding-top: 30px;
+  }
+  .free-frank {
+    margin-top: 0;
+  }
+  .free-separator {
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 30px;
+  }
+  .free-btn {
+    margin: auto;
+    width: 80%;
+  }
+  .free-header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .free-headers {
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .free-header img {
+    position: initial;
+  }
   .free-img-img {
     -webkit-transform: translateY(27px) !important;
             transform: translateY(27px) !important;

@@ -40,6 +40,10 @@
     &-block
       &-img img
         transform: translate(164px, -561px)
+@media ( max-width: 1500px )
+  .free
+    &-frank
+      right: 0
 @media ( max-width: 1420px )
   .free
     &-block
@@ -47,22 +51,61 @@
         transform: translate(0px, -561px)
 @media ( max-width: 1200px )
   .free
+    &-frank
+      width: 340px
+    &-headers
+      max-width: 658px
     &-block
       &-img img
         transform: translate(15px, -498px)
         width: 55%
 @media ( max-width: 992px )
   .free
+    &-headers
+      font-size: 22px
+      max-width: 470px
     &-block
       &-img img
         transform: translate(15px, -382px)
 @media ( max-width: 768px )
   .free
+    padding-bottom: 50px
+    margin: auto
+    &-header
+      flex-direction: column-reverse
+      img
+        position: initial
+    &-btn
+      padding: 21px 30px 16px 33px
+      width: 209px
+      &__text
+        font-size: 18px
+      &__img
+        width: 32px
+        height: 32px
     &-block
       &-img img
         transform: translate(15px, -308px)
 @media ( max-width: 576px )
   .free
+    padding-top: 30px
+    &-frank
+      margin-top: 0
+    &-separator
+      margin: auto
+      margin-top: 5px
+      margin-bottom: 30px
+    &-btn
+      margin: auto
+      width: 80%
+    &-header
+      flex-direction: column-reverse
+      &s
+        font-size: 16px
+        margin-top: 20px
+        text-align: center
+      img
+        position: initial
     &-img
       &-img
         transform: translateY(27px)!important
