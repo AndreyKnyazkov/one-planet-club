@@ -12518,6 +12518,19 @@ body.compensate-for-scrollbar {
   margin-top: 40px;
 }
 
+@media (max-width: 768px) {
+  .online {
+    padding-top: 45px;
+    padding-bottom: 62px;
+  }
+  .online-header__dspr {
+    font-size: 14px !important;
+    color: #000000;
+    letter-spacing: 0.65px;
+    line-height: 18.86px;
+  }
+}
+
 .work {
   margin-top: 90px;
 }
@@ -12585,6 +12598,16 @@ body.compensate-for-scrollbar {
   position: absolute;
   content: url(../img/work/btn-nonactive.png);
   right: 25px;
+}
+
+@media (max-width: 768px) {
+  .work-btn {
+    font-size: 18px;
+  }
+  .work-collapse {
+    font-size: 14px;
+    line-height: initial;
+  }
 }
 
 .future {
