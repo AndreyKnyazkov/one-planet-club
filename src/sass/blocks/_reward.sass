@@ -1,6 +1,5 @@
 .reward-12
   background-size: 50%
-  clip-path: polygon(0 0, 100% 0, 78% 100%, 0 100%)
   &-separator
     margin: initial
     margin-top: 20px
@@ -103,7 +102,29 @@
   &-img
     transform: translateY(-18px)
     margin-bottom: 60px
+@media ( max-width: 1500px )
+  .reward-12
+    &-img
+      right: 0  
+@media ( max-width: 1200px )
+  .reward-12
+    &-img
+      width: 60%
+      transform: translateY(-6px)
 @media (max-width: 992px)
+  .reward-12
+    padding-top: 55px
+    padding-bottom: 55px
+    &-button
+      width: 227px
+      padding: 19px 25px 19px 28px
+      align-items: center
+      &__text
+        line-height: 16.32px
+        font-size: 18px
+      &__img
+        width: 32px
+        height: 32px
   .monitor
     &-img
       width: 80%
@@ -117,6 +138,11 @@
           &-2
             font-size: 12px
 @media (max-width: 768px)
+  .reward-12
+    &-separator
+      margin-top: 0
+    &-button
+      margin-top: 37px
   .monitor
     &-img
       width: 60%
@@ -155,3 +181,21 @@
           &-4
             width: 80%
             margin: auto
+@media ( max-width: 576px )
+  .reward-12
+    z-index: 1
+    &-img
+      width: 100%
+      z-index: 2!important
+      margin-top: 150px
+    &-button
+      display: flex
+      margin-top: 310px!important
+      z-index: 6
+      width: 80%
+      margin: auto
+    &-header
+      margin: auto
+      text-align: center
+    &-separator
+      margin: auto
