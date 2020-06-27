@@ -12113,8 +12113,8 @@ body.compensate-for-scrollbar {
     z-index: 1;
   }
   .reward-12-media {
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
+    -webkit-transform: translateY(20px) !important;
+            transform: translateY(20px) !important;
   }
   .reward-12-img {
     width: 100%;
